@@ -1,10 +1,10 @@
 .section {
   &--hero {
-    padding-block: 2rem;
+    padding: 2rem;
   }
 
   &--about {
-    padding-block: 12.8rem;
+    padding: 12.8rem 2rem;
 
     &__content {
       display: grid;
@@ -54,7 +54,7 @@
   }
 
   &--content {
-    padding-block: 12.8rem;
+    padding: 12.8rem 2rem;
 
     &__container {
       display: flex;

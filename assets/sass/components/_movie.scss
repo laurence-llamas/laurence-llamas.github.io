@@ -2,6 +2,12 @@
   position: relative;
   display: inline-block;
 
+  &:hover {
+    & .movie__link .movie__caption > span {
+      background-size: 100% 2px;
+    }
+  }
+
   &__video {
     height: 50rem;
     width: 80rem;
@@ -24,14 +30,6 @@
     &:link,
     &:visited {
       @include linkReset;
-      @include linkBaseStyle;
-      background-position: bottom left;
-      background-size: 0% 1px;
-    }
-
-    &:hover,
-    &:active {
-      background-size: 100% 1px;
     }
   }
 
@@ -39,6 +37,12 @@
     position: absolute;
     font-weight: 900;
     font-size: 5.2rem;
+
+    & span {
+      @include linkBaseStyle;
+      background-position: bottom left;
+      background-size: 0% 2px;
+    }
 
     @media screen and (max-width: $bp-large) {
       position: static;

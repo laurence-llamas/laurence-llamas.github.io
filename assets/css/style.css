@@ -26,11 +26,6 @@ body {
   min-height: 100vh;
   background-color: #0b0b0b; }
 
-header,
-main,
-footer {
-  padding: 0 2rem; }
-
 img,
 svg,
 picture,
@@ -150,6 +145,8 @@ body {
 .movie {
   position: relative;
   display: inline-block; }
+  .movie:hover .movie__link .movie__caption > span {
+    background-size: 100% 2px; }
   .movie__video {
     height: 50rem;
     width: 80rem; }
@@ -165,19 +162,18 @@ body {
   .movie__link:link, .movie__link:visited {
     text-decoration: none;
     color: #fff;
-    display: inline-block;
-    background: linear-gradient(#fff, #fff);
-    background-repeat: no-repeat;
-    padding-bottom: 0.5rem;
-    transition: background-size 0.5s ease-out;
-    background-position: bottom left;
-    background-size: 0% 1px; }
-  .movie__link:hover, .movie__link:active {
-    background-size: 100% 1px; }
+    display: inline-block; }
   .movie__caption {
     position: absolute;
     font-weight: 900;
     font-size: 5.2rem; }
+    .movie__caption span {
+      background: linear-gradient(#fff, #fff);
+      background-repeat: no-repeat;
+      padding-bottom: 0.5rem;
+      transition: background-size 0.5s ease-out;
+      background-position: bottom left;
+      background-size: 0% 2px; }
     @media screen and (max-width: 65.625em) {
       .movie__caption {
         position: static;
@@ -264,10 +260,10 @@ body {
     justify-content: end; }
 
 .section--hero {
-  padding-block: 2rem; }
+  padding: 2rem; }
 
 .section--about {
-  padding-block: 12.8rem; }
+  padding: 12.8rem 2rem; }
   .section--about__content {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -302,7 +298,7 @@ body {
     background-size: 0% 1px; }
 
 .section--content {
-  padding-block: 12.8rem; }
+  padding: 12.8rem 2rem; }
   .section--content__container {
     display: flex;
     flex-direction: column;
