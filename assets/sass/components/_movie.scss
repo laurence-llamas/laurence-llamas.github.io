@@ -23,6 +23,10 @@
     &--full {
       height: 80rem;
       width: 100%;
+
+      @media screen and (max-width: $bp-tablet) {
+        height: 50rem;
+      }
     }
   }
 
