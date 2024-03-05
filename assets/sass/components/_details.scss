@@ -1,0 +1,12 @@
+.details {
+  width: 100%;
+  list-style: none;
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.6rem 0;
+    border-bottom: 1px solid $clr-white;
+  }
+}
