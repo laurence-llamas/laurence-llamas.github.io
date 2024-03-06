@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
     <title>Laurence Llamas</title>
   </head>
   <body>
@@ -18,14 +18,14 @@
       <nav class="navigation">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a href="/film.html" class="navigation__link">Films</a>
+            <a
+              href="/film.html"
+              class="navigation__link navigation__link--active"
+              >Films</a
+            >
           </li>
           <li class="navigation__item">
-            <a
-              href="/index.html"
-              class="navigation__link navigation__link--active"
-              >Laurence Llamas</a
-            >
+            <a href="/index.html" class="navigation__link">Laurence Llamas</a>
           </li>
           <li class="navigation__item">
             <a href="/photo.html" class="navigation__link">Photography</a>
@@ -40,57 +40,53 @@
           <figure>
             <iframe
               class="movie__video--full"
-              src="https://www.youtube.com/embed/3nU8FrNtIh0?rel=0&controls=0&autoplay=1"
+              src="https://www.youtube.com/embed/0jZcnRDVnas?rel=0&controls=1&autoplay=1"
               loading="lazy"
               frameborder="0"
-              title="Gatilyo"
+              title="What Lies Within His Eyes"
             >
             </iframe>
           </figure>
         </div>
       </section>
-      <section class="section section--about">
-        <div class="u-container">
-          <h1 class="heading heading--secondary u-margin-bottom-md">
-            Through lenses, I sculpt stories; each frame a brushstroke, every
-            film a canvas of emotions, weaving dreams into reality.
-          </h1>
-          <p class="paragraph paragraph--lg u-margin-bottom-xl">
-            I'm Jolo &mdash; a filmmaker, photographer, freelance creative, hobo
-            and a self-proclaimed avant-gardist.
-          </p>
-          <div class="section--about__content">
-            <img
-              src="assets/images/laurence.webp"
-              alt="Laurence Llamas"
-              class="section--about__img"
-            />
-            <h2 class="heading heading--primary">
-              <span class="u-block">Laurence</span> Llamas
-            </h2>
-            <div>
-              <p class="paragraph u-margin-bottom-md">
-                Laurence Llamas is a filmmaker/based in Manila, Philippines, and
-                hails from his roots in Dagupan, Pangasinan. He gained early
-                recognition by showcasing his photography talents in different
-                photo exhibits, including Kalye Dagupan (2017) and the Dagupan
-                Photo (2021). With a deep-seated interest and passion for the
-                arts, He eventually moved to Far Eastern University to study
-                digital cinema. There, he actively engaged in various
-                student-led productions, honing his skills as a writer and
-                producer.
-              </p>
-              <p class="paragraph">
-                One of his current and most significant milestones came with the
-                creation of his best film to date, "Ang Pagtangis ng mga Aninong
-                Umiindak sa Hangin" (2023), which garnered critical acclaim and
-                numerous awards within local and prestigious film festivals
-                including SINEPIYU XV (2023) and GAWAD ALTERNATIBO 2023.
-              </p>
-            </div>
+
+      <section class="section section--film-detail">
+        <div class="u-container film-detail__content">
+          <h2 class="heading heading--secondary u-margin-bottom-sm">
+            What Lies Within His Eyes
+          </h2>
+          <div>
+            <p class="paragraph u-margin-bottom-md">
+              Amidst the escalating cases of police brutality in the country, a
+              young man is being plagued by visions of drug war casualties who
+              strive for justice, which unravels long buried secrets from the
+              past.
+            </p>
+
+            <ul class="details">
+              <li class="details__item">
+                <span class="details__content details__content--header"
+                  >Role</span
+                >
+                <span class="details__content">Director of Photography </span>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
+
+      <section class="film-detail__container">
+        <iframe
+          class="film-detail__recommended"
+          src="https://www.youtube.com/embed/ULoPch2glPU?si=_DNUBsVR9BGaKnm4?rel=0&controls=1&autoplay=1"
+          loading="lazy"
+          frameborder="0"
+          title="PNF x PDL"
+        >
+        </iframe>
+        <a href="pnf-x-pdl.html" class="film-detail__title">PNF x PDL</a>
+      </section>
+
       <section class="section section--contact">
         <div class="u-container">
           <div class="contact__text u-text-center">
