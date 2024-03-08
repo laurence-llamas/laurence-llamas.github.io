@@ -134,6 +134,7 @@
   &__content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 2.4rem;
     margin-bottom: 8.2rem;
 
     @media screen and (max-width: $bp-large) {
@@ -155,6 +156,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
     @include linkReset;
 
     @media screen and (max-width: $bp-large) {

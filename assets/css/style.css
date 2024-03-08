@@ -386,6 +386,7 @@ body {
 .film-detail__content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 2.4rem;
   margin-bottom: 8.2rem; }
   @media screen and (max-width: 65.625em) {
     .film-detail__content {
@@ -394,7 +395,8 @@ body {
 
 .film-detail__recommended {
   width: 100%;
-  height: 40rem; }
+  height: 40rem;
+  object-fit: cover; }
 
 .film-detail__title {
   font-weight: 700;
@@ -403,6 +405,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
   text-decoration: none;
   color: #fff;
   display: inline-block; }
